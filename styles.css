@@ -1,33 +1,23 @@
-/*  your css code here. If applicable */
-:root{
-	background-color:skyblue;
+/* Style for the container */
+#container {
+    margin: 20px;
+    font-size: 20px;
+    color: black;
+    position: relative;
 }
 
- div :first-child{
-	background-color:black;
-	color:white;
+/* Pseudo-element for text before the container */
+#container::before {
+    content: "Before Element";
+    color: #f00; /* Red color */
+    font-size: 20px;
+    margin-right: 10px;
 }
 
- div :last-child{
-	color: red;
-}
-
- ul li:nth-child(1){
-	background-color:white;
-}
-
- ul li:nth-child(5){
-	background-color:white;
-}
-
- ul li:nth-child(2){
-    background-color: slategrey;
-}
-
-ul li:nth-child(3){
-	background-color:pink;
-}
-
- ul li:nth-child(4){
-    background-color: slategrey;
+/* Pseudo-element for text after the container */
+#container::after {
+    content: "After Element";
+    color: #f00; /* Red color */
+    font-size: 20px;
+    margin-left: 10px;
 }
